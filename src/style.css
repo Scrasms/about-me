@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(246,238,227);
+}
+
+svg {
+    fill: rgb(54, 201, 62);
+    stroke: rgb(43, 128, 48);
+    stroke-width: 3px;
+    position: relative;
+    transform-origin: center;
+
+}
+
+path:hover {
+    fill: rgb(95, 219, 126);
+}
+
+path:active {
+    fill: rgb(85, 155, 102);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.info {
+    border: 5px solid black;
+    padding: 5px;
+    width: 30%;
+}
+
+.world-map {
+    border: 5px solid brown;
+    width: 70%;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right, rgb(112, 234, 255), rgb(56, 163, 235));
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+    cursor: grab;
+}
+
+.dragging {
+    cursor: grabbing;
+}
