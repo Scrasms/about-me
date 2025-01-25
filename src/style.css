@@ -14,7 +14,7 @@ svg {
     stroke-width: 3px;
     position: relative;
     transform-origin: center;
-
+    transition: all 0.25s linear;
 }
 
 path:hover {
