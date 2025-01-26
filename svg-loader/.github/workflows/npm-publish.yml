@@ -1,0 +1,30 @@
+name: Publish Package to npmjs
+on:
+  push:
+    branches:
+      - 'main'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      # Setup .npmrc file to publish to npm
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
+          # Defaults to the user or organization that owns the workflow file
+          scope: '@octocat'
+      - name: vars
+        id: vars
+        run: |
+          echo "latest_version=$(npm view external-svg-loader version)" >> $GITHUB_OUTPUT
+          echo "package_version=$(cat package.json | jq -r '.version')" >> $GITHUB_OUTPUT
+      - name: publish
+        run: |
+          yarn
+          yarn build
+          yarn publish
+        if: ${{ steps.vars.outputs.latest_version != steps.vars.outputs.package_version }}
+        env:
+            NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

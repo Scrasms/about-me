@@ -12,7 +12,6 @@ svg {
     fill: rgb(54, 201, 62);
     stroke: rgb(43, 128, 48);
     stroke-width: 3px;
-    position: relative;
     transform-origin: center;
     transition: all 0.25s linear;
 }

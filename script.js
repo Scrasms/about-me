@@ -32,10 +32,10 @@ map.addEventListener('mousemove', (event) => {
         const svgCoords = svg.getBoundingClientRect();
 
         // Set the pannable area for the map
-        const leftMax = -(svgCoords.width / 2);
-        const rightMax = svgCoords.width / 2; 
-        const topMax = -(svgCoords.height / 2); 
-        const bottomMax = svgCoords.height / 2;
+        const leftMax = -(svgCoords.width / 4);
+        const rightMax = svgCoords.width / 4; 
+        const topMax = -(svgCoords.height / 4); 
+        const bottomMax = svgCoords.height / 4;
 
         panX += event.movementX;
         panY += event.movementY;
@@ -59,7 +59,7 @@ map.addEventListener('wheel', (event) => {
     scaleFactor = Math.min(Math.max(MIN_ZOOM, scaleFactor), MAX_ZOOM);
 
     updateSVGTransform();
-}); 
+});
 
 function updateSVGTransform() {
     svg.style.transform = `translate(${panX}px, ${panY}px) scale(${scaleFactor})`;
