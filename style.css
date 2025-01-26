@@ -14,6 +14,9 @@ svg {
     stroke-width: 3px;
     transform-origin: center;
     transition: all 0.25s linear;
+    position: relative;
+    top: 6vh;
+    right: 8vw;
 }
 
 path:hover {
@@ -21,33 +24,53 @@ path:hover {
 }
 
 path:active {
-    fill: rgb(85, 155, 102);
+    fill: rgb(105, 180, 124);
 }
 
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
     height: 100vh;
 }
 
 .info {
-    border: 5px solid black;
-    padding: 5px;
     width: 30%;
+    height: 100%;
+    position: absolute;
+    border-left: 5px solid rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    color: rgb(255, 255, 188);
+    background-color: rgba(1, 82, 136, 0.7);
+}
+
+.hidden {
+    display: none;
 }
 
 .world-map {
-    border: 5px solid brown;
-    width: 70%;
+    height: 100%;
     overflow: hidden;
     background-image: linear-gradient(to bottom right, rgb(112, 234, 255), rgb(56, 163, 235));
     background-repeat: no-repeat;
+    background-size: cover; 
     background-attachment: fixed;   
     cursor: grab;
 }
 
 .dragging {
     cursor: grabbing;
+}
+
+#close {
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 30%;
+    font-weight: bolder;
+    color: white;
+    background-color: rgba(255, 0, 0, 45%);
+    float: right;
 }
 
 @media (orientation : portrait) {

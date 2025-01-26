@@ -1,5 +1,7 @@
 const map = document.querySelector('.world-map');
 const svg = document.querySelector('svg');
+const info = document.querySelector('.info');
+const close = document.querySelector('#close');
 
 // Constants to track the max and min zoom factor and the zoom speed
 const MIN_ZOOM = 0.5;
@@ -32,10 +34,10 @@ map.addEventListener('mousemove', (event) => {
         const svgCoords = svg.getBoundingClientRect();
 
         // Set the pannable area for the map
-        const leftMax = -(svgCoords.width / 4);
-        const rightMax = svgCoords.width / 4; 
-        const topMax = -(svgCoords.height / 4); 
-        const bottomMax = svgCoords.height / 4;
+        const leftMax = -(svgCoords.width / 2);
+        const rightMax = svgCoords.width / 2; 
+        const topMax = -(svgCoords.height / 2); 
+        const bottomMax = svgCoords.height / 2;
 
         panX += event.movementX;
         panY += event.movementY;
@@ -65,3 +67,6 @@ function updateSVGTransform() {
     svg.style.transform = `translate(${panX}px, ${panY}px) scale(${scaleFactor})`;
 }
 
+close.addEventListener('click', () => {
+    info.classList.toggle('hidden');
+});
