@@ -49,3 +49,9 @@ path:active {
 .dragging {
     cursor: grabbing;
 }
+
+@media (orientation : portrait) {
+    .world-map {
+        overflow: scroll;
+    }
+}
