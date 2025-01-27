@@ -1,0 +1,131 @@
+.Australia {
+    fill: rgb(113, 228, 151);
+    stroke: rgb(7, 94, 36);
+}
+
+.Australia:hover {
+    fill: rgb(111, 212, 145);
+}
+
+.Australia:active {
+    fill: rgb(97, 194, 129);
+}
+
+.China {
+    fill: rgb(223, 238, 136);
+    stroke: rgb(124, 129, 74);
+}
+
+.China:hover {
+    fill: rgb(202, 216, 124);
+}
+
+.China:active {
+    fill: rgb(169, 180, 103);
+}
+
+.France {
+    fill: rgb(127, 161, 255);
+    stroke: rgb(99, 99, 190);
+}
+
+.France:hover {
+    fill: rgb(113, 142, 221);
+}
+
+.France:active {
+    fill: rgb(114, 118, 168);
+}
+
+.United.States {
+    fill: rgb(86, 170, 219);
+    stroke: rgb(60, 112, 143);
+}
+
+.United.States:hover {
+    fill: rgb(79, 150, 192);
+}
+
+.United.States:active {
+    fill: rgb(69, 124, 156);
+}
+
+.United.Kingdom {
+    fill: rgb(238, 158, 158);
+    stroke: rgb(196, 89, 89);
+}
+
+.United.Kingdom:hover {
+    fill: rgb(199, 135, 135);
+}
+
+.United.Kingdom:active {
+    fill: rgb(155, 105, 105);
+}
+
+.Italy {
+    fill: rgb(56, 170, 109);
+    stroke: rgb(3, 97, 47);
+}
+
+.Italy:hover {
+    fill: rgb(67, 145, 103);
+}
+
+.Italy:active {
+    fill: rgb(52, 107, 78);
+}
+
+.Japan {
+    fill: pink;
+    stroke: rgb(151, 105, 113);
+}
+
+.Japan:hover {
+    fill: rgb(218, 163, 171);
+}
+
+.Japan:active {
+    fill: rgb(185, 138, 145);
+}
+
+.Russian.Federation {
+    fill: rgb(236, 230, 230);
+    stroke: rgb(133, 131, 131);
+}
+
+.Russian.Federation:hover {
+    fill: rgb(223, 216, 216);
+}
+
+.Russian.Federation:active {
+    fill: rgb(201, 194, 194);
+}
+
+/*Madagascar*/
+#MG_80 {
+    fill: rgb(189, 102, 102);
+    stroke: rgb(148, 33, 47);
+}
+
+#MG_80:hover {
+    fill: rgb(168, 94, 94);
+}
+
+#MG_80:active {
+    fill: rgb(145, 62, 72);
+}
+
+/*Germany*/
+#DE_31 {
+    fill: rgb(202, 201, 201);
+    stroke: grey;
+}
+
+#DE_31:hover {
+    fill: rgb(180, 179, 179);
+}
+
+#DE_31:active {
+    fill: rgb(151, 151, 151);
+}
