@@ -9,22 +9,24 @@ body {
 }
 
 svg {
-    fill: rgb(54, 201, 62);
-    stroke: rgb(43, 128, 48);
-    stroke-width: 3px;
+    fill: rgb(173, 228, 176);
+    stroke: rgb(110, 145, 112);
+    stroke-width: 1px;
     transform-origin: center;
     transition: all 0.25s linear;
     position: relative;
     top: 6vh;
     right: 8vw;
+    /*Remove blur upon image translation*/
+    backface-visibility: hidden;
 }
 
 path:hover {
-    fill: rgb(95, 219, 126);
+    fill: rgb(154, 218, 170);
 }
 
 path:active {
-    fill: rgb(105, 180, 124);
+    fill: rgb(143, 189, 154);
 }
 
 .container {
