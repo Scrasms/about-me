@@ -1,6 +1,6 @@
 const map = document.querySelector('.world-map');
 const svg = document.querySelector('svg');
-const info = document.querySelector('.info');
+const info = document.querySelector('.intro-sidebar');
 const close = document.querySelector('#close');
 
 // Constants to track the max and min zoom factor and the zoom speed

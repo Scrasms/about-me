@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: DynaPuff, Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -36,14 +37,16 @@ path:active {
     height: 100vh;
 }
 
-.info {
+.intro-sidebar {
     width: 30%;
     height: 100%;
+    min-width: 180px;
     position: absolute;
     border-left: 5px solid rgba(0, 0, 0, 0.7);
-    padding: 5px;
+    padding: 20px;
     color: rgb(255, 255, 188);
-    background-color: rgba(1, 82, 136, 0.7);
+    background-color: rgba(107, 51, 6, 0.7);
+    text-align: left;
 }
 
 .hidden {
