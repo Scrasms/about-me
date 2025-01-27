@@ -129,3 +129,31 @@
 #DE_31:active {
     fill: rgb(151, 151, 151);
 }
+
+/*Egypt*/
+#EG_36 {
+    fill: rgb(228, 200, 175);
+    stroke: rgb(141, 124, 109);
+}
+
+#EG_36:hover {
+    fill: rgb(214, 187, 165);
+}
+
+#EG_36:active {
+    fill: rgb(170, 149, 132);
+}
+
+/*Netherlands*/
+#NL_140 {
+    fill: rgb(240, 193, 107);
+    stroke: rgb(192, 155, 86);
+}
+
+#NL_140:hover {
+    fill: rgb(221, 179, 100);
+}
+
+#NL_140:active {
+    fill: rgb(204, 165, 92);
+}
