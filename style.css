@@ -33,6 +33,7 @@ h1 {
 
 h2 {
     font-size: calc(0.5rem + 2vw);
+    font-style: italic;
     animation: rainbow-cycle 10s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
     margin-bottom: 5%;
 }
@@ -58,6 +59,7 @@ p {
     border: 5px solid rgba(0, 0, 0, 0.7);
     border-top-left-radius: 50px;
     border-right: none;
+    border-bottom: none;
     padding: 20px;
     color: rgb(255, 255, 188);
     background-color: rgba(0, 0, 0, 0.7);
