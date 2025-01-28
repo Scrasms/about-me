@@ -45,8 +45,19 @@ path:active {
     border-left: 5px solid rgba(0, 0, 0, 0.7);
     padding: 20px;
     color: rgb(255, 255, 188);
-    background-color: rgba(107, 51, 6, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     text-align: left;
+}
+
+h1 {
+    position: relative;
+    font-size: calc(0.5rem + 3vw);
+    color: rgb(253, 248, 234);
+}
+
+h2 {
+    font-size: calc(0.5rem + 2vw);
+    animation: rainbow-cycle 10s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .hidden {
@@ -76,6 +87,19 @@ path:active {
     color: white;
     background-color: rgba(255, 0, 0, 45%);
     float: right;
+}
+
+@keyframes rainbow-cycle {
+    0%, 100% { color: rgb(127, 161, 255); }
+    10% { color: rgb(86, 170, 219); }
+    20% { color: rgb(113, 228, 151); }
+    30% { color: rgb(56, 170, 109); }
+    40% { color: rgb(223, 238, 136); }
+    50% { color: rgb(228, 200, 175); }
+    60% { color: pink; }
+    70% { color: rgb(240, 193, 107); }
+    80% { color: rgb(238, 158, 158); }
+    90% { color: rgb(189, 102, 102); }
 }
 
 @media (orientation : portrait) {

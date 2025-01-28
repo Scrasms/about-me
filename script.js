@@ -67,6 +67,7 @@ function updateSVGTransform() {
     svg.style.transform = `translate(${panX}px, ${panY}px) scale(${scaleFactor})`;
 }
 
+// Intro-sidebar close button functionality
 close.addEventListener('click', () => {
     info.classList.toggle('hidden');
 });
