@@ -1,6 +1,6 @@
 const map = document.querySelector('.world-map');
 const svg = document.querySelector('svg');
-const info = document.querySelector('.intro-sidebar');
+const sidebar = document.querySelector('.sidebar');
 const close = document.querySelector('#close');
 
 // Constants to track the max and min zoom factor and the zoom speed
@@ -63,11 +63,11 @@ map.addEventListener('wheel', (event) => {
     updateSVGTransform();
 });
 
+// Sidebar close button functionality
+close.addEventListener('click', () => {
+    sidebar.classList.toggle('hidden');
+});
+
 function updateSVGTransform() {
     svg.style.transform = `translate(${panX}px, ${panY}px) scale(${scaleFactor})`;
 }
-
-// Intro-sidebar close button functionality
-close.addEventListener('click', () => {
-    info.classList.toggle('hidden');
-});
