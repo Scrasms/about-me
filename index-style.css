@@ -45,7 +45,7 @@ p {
 
 .container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: flex-end;
     height: 100vh;
 }
@@ -57,8 +57,8 @@ p {
     min-height: 350px;
     position: absolute;
     border: 5px solid rgba(0, 0, 0, 0.7);
-    border-top-left-radius: 50px;
-    border-right: none;
+    border-top-right-radius: 50px;
+    border-left: none;
     border-bottom: none;
     padding: 20px;
     color: rgb(255, 255, 188);
@@ -93,6 +93,10 @@ p {
     color: white;
     background-color: rgba(255, 0, 0, 45%);
     float: right;
+}
+
+#close:hover {
+    background-color: rgba(255, 40, 40, 0.45);
 }
 
 @keyframes rainbow-cycle {
