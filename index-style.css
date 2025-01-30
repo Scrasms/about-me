@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: DynaPuff, Arial, Helvetica, sans-serif;
+    word-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 svg {
@@ -39,8 +41,21 @@ h2 {
 }
 
 p {
-    font-size: calc(0.5rem + 1vw);
     margin-bottom: 8%;
+}
+
+p, 
+li {
+    font-size: calc(0.5rem + 1vw);
+    color: rgb(255, 255, 188);
+}
+
+li {
+    margin-top: 5%;
+}
+
+li::marker {
+    content: '🦘';
 }
 
 .container {
@@ -48,6 +63,22 @@ p {
     justify-content: flex-start;
     align-items: flex-end;
     height: 100vh;
+}
+
+.country-container {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+}
+
+.text-container {
+    margin: 0 auto;
+    text-align: left;
+    width: 50%;
 }
 
 .sidebar {
@@ -61,7 +92,6 @@ p {
     border-left: none;
     border-bottom: none;
     padding: 20px;
-    color: rgb(255, 255, 188);
     background-color: rgba(0, 0, 0, 0.7);
     text-align: left;
 }
@@ -74,7 +104,16 @@ p {
     background-size: cover; 
     background-attachment: fixed;   
     cursor: grab;
-}   
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.circle {
+    border-radius: 50%;
+}
 
 .hidden {
     display: none;
@@ -90,7 +129,7 @@ p {
     user-select: none; 
 }
 
-#close {
+.close {
     height: 30px;
     width: 30px;
     border: none;
@@ -101,7 +140,7 @@ p {
     float: right;
 }
 
-#close:hover {
+.close:hover {
     background-color: rgba(255, 40, 40, 0.45);
 }
 

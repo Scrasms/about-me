@@ -1,7 +1,13 @@
 const map = document.querySelector('.world-map');
 const svg = document.querySelector('svg');
+
 const sidebar = document.querySelector('.sidebar');
-const close = document.querySelector('#close');
+const closeSidebar = document.querySelector('.close.side');
+
+const countryBox = document.querySelector('.country-container');
+const countryTitle = document.querySelector('.country-container > h1');
+let countryText;
+const closeCountry = document.querySelector('.close.country');
 
 // Constants to track the max and min zoom factor and the zoom speed
 const MIN_ZOOM = 0.5;
@@ -63,11 +69,58 @@ map.addEventListener('wheel', (event) => {
     updateSVGTransform();
 });
 
+// Load contents of popup window when an interesting country is pressed
+// Wait until svg is loaded by external-svg-loader library
+window.addEventListener('iconload', () => {
+    const countries = document.querySelectorAll('.interesting');
+    for (const country of countries) {
+        country.addEventListener('click', () => {
+            hideSidebar();
+            countryBox.classList.remove('hidden');
+
+            // Set title of popup window to the name of the clicked country
+            countryTitle.textContent = country.getAttribute('name');
+
+            // Unhide text for that specific country
+            countryText = document.querySelector('.' + countryTitle.textContent);
+            countryText.classList.remove('hidden');
+        }); 
+    }
+});
+
 // Sidebar close button functionality
-close.addEventListener('click', () => {
-    sidebar.classList.toggle('hidden');
+closeSidebar.addEventListener('click', () => {
+    hideSidebar();
+});
+
+// Country close button functionality
+closeCountry.addEventListener('click', () => {
+    countryBox.classList.add('hidden');
+
+    // Hide the country's text
+    if (countryText) {
+        countryText.classList.add('hidden');
+    }
+});
+
+// Country close with escape button functionality
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !countryBox.classList.contains('hidden')) {
+        countryBox.classList.add('hidden');
+
+         // Hide the country's text
+        if (countryText) {
+            countryText.classList.add('hidden');
+        }
+    }
 });
 
 function updateSVGTransform() {
     svg.style.transform = `translate(${panX}px, ${panY}px) scale(${scaleFactor})`;
+}
+
+function hideSidebar() {
+    if (!sidebar.classList.contains('hidden')) {
+        sidebar.classList.add('hidden');
+    }
 }
