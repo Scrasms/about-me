@@ -37,11 +37,6 @@ h2 {
     font-size: 4vh;
     font-style: italic;
     animation: rainbow-cycle 10s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
-    margin-bottom: 5%;
-}
-
-p {
-    margin-bottom: 5%;
 }
 
 p, 
@@ -49,6 +44,12 @@ li {
     font-size: 3vh;
     color: rgb(255, 255, 188);
 }
+
+h2,
+p {
+    margin-bottom: 5%;
+}
+
 
 li {
     margin-top: 5%;
