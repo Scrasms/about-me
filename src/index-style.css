@@ -104,9 +104,9 @@ video {
     margin: 0 auto;
     margin-top: 5%;
     border-radius: 10px;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    animation: anime-cycle 10s infinite linear;
+    animation: anime-cycle 20s infinite linear;
 }
 
 .world-map {
@@ -170,10 +170,15 @@ video {
 
 @keyframes anime-cycle {
     0%, 100% { background-image: url(./assets/yourname.jpg); }
-    20% { background-image: url(./assets/rezero.jpg); }
-    40% { background-image: url(./assets/steins;gate.jpg); }
-    60% { background-image: url(./assets/ubw.jpg); }
-    80% { background-image: url(./assets/umineko.jpg); }
+    10% { background-image: url(./assets/rezero.jpg); }
+    20% { background-image: url(./assets/steins;gate.jpg); }
+    30% { background-image: url(./assets/eva.jpg); }
+    40% { background-image: url(./assets/ubw.jpg); }
+    50% { background-image: url(./assets/umineko.jpg); }
+    60% { background-image: url(./assets/diu.jpg); }
+    70% { background-image: url(./assets/codegeass.jpg); }
+    80% { background-image: url(./assets/aot.jpg); }
+    90% { background-image: url(./assets/jjk.jpg); }
 }   
 
 @keyframes rainbow-cycle {
