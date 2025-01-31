@@ -7,9 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./index-style.css">
-    <link rel="stylesheet" href="./countries-style.css">
-    <script type="text/javascript" src="./svg-loader/svg-loader.min.js" async></script>
+    <link rel="stylesheet" href="./src/index-style.css">
+    <link rel="stylesheet" href="./src/countries-style.css">
+    <script type="text/javascript" src="./src/svg-loader/svg-loader.min.js" async></script>
 </head>
 <body>
     <div class="container">
@@ -23,11 +23,11 @@
                     <li>I'm 19 years old
                     <li>My favourite noun is 'mumpsimus', my favourite verb is 'defenestrate' and my favourite adjective is 'phantasmagorical'</li>
                     <li>I love cats but I think I'm allergic to them 
-                        <img class="circle" src="./assets/crying-emoji-dies.gif" height="80px" width="80px">
+                        <img class="circle" src="./src/assets/crying-emoji-dies.gif" height="80px" width="80px">
                     </li>
                     <li>Trying my best to get better at programming: 
                         <a href="https://github.com/Scrasms" target="_blank" rel="noopener noreferrer">
-                            <img src="./assets/github.png" height="60px" width="60px">
+                            <img src="./src/assets/github.png" height="60px" width="60px">
                         </a>
                     </li>
                     <li>This popup didn't have much to do with the titular country...but the other ones will I promise!</li>
@@ -43,7 +43,7 @@
                     </li>
                 </ul>
                 <div class="video-container">
-                    <video src="./assets/dogeza.mp4" height="180" width="320px" controls></video>
+                    <video src="./src/assets/dogeza.mp4" height="180" width="320px" controls></video>
                 </div>
             </div>
 
@@ -109,8 +109,7 @@
         </div>
 
         <div class="world-map">
-            <!--Reenable caching after project completed-->
-            <svg data-src="./assets/world.svg" data-cache="disabled" baseprofile="tiny" fill="#ececec" height="857" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".2" version="1.2" viewbox="0 0 2000 857" width="2000" xmlns="http://www.w3.org/2000/svg">
+            <svg data-src="./src/assets/world.svg" data-cache="disabled" baseprofile="tiny" fill="#ececec" height="857" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".2" version="1.2" viewbox="0 0 2000 857" width="2000" xmlns="http://www.w3.org/2000/svg">
             </svg>
         </div>
     
@@ -126,6 +125,6 @@
         </div>
     </div>
 
-    <script src="./map.js"></script>
+    <script src="./src/map.js"></script>
 </body>
 </html>
