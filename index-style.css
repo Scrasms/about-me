@@ -39,24 +39,39 @@ h2 {
     animation: rainbow-cycle 10s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
 p, 
 li {
     font-size: 3vh;
     color: rgb(255, 255, 188);
 }
 
-h2,
-p {
-    margin-bottom: 5%;
-}
-
-
+p,
 li {
     margin-top: 5%;
 }
 
-li::marker {
+video {
+    max-height: 180px;
+    max-width: 320px;
+    flex-shrink: 1;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.Australia li::marker {
     content: '🦘';
+}
+
+.Japan li::marker {
+    content: '🌸';
 }
 
 .container {
@@ -83,6 +98,27 @@ li::marker {
     width: 50%;
 }
 
+.anime-container {
+    height: 318px;
+    width: 225px;
+    margin: 0 auto;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: anime-cycle 10s infinite linear;
+}
+
+.world-map {
+    height: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right, rgb(112, 234, 255), rgb(56, 163, 235));
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;   
+    cursor: grab;
+}
+
 .sidebar {
     width: 30%;
     height: 60%;
@@ -97,21 +133,6 @@ li::marker {
     background-color: rgba(0, 0, 0, 0.7);
     text-align: left;
     overflow-y: auto;
-}
-
-.world-map {
-    height: 100%;
-    overflow: hidden;
-    background-image: linear-gradient(to bottom right, rgb(112, 234, 255), rgb(56, 163, 235));
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-attachment: fixed;   
-    cursor: grab;
-}
-
-ul {
-    display: flex;
-    flex-direction: column;
 }
 
 .circle {
@@ -145,6 +166,14 @@ ul {
 
 .close:hover {
     background-color: rgba(255, 40, 40, 0.45);
+}
+
+@keyframes anime-cycle {
+    0%, 100% { background-image: url(./assets/yourname.jpg); background-size: cover; }
+    20% { background-image: url(./assets/rezero.jpg); background-size: cover; }
+    40% { background-image: url(./assets/steins;gate.jpg); background-size: cover; }
+    60% { background-image: url(./assets/ubw.jpg); background-size: cover; }
+    80% { background-image: url(./assets/umineko.jpg); background-size: cover; }
 }
 
 @keyframes rainbow-cycle {
