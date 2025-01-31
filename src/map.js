@@ -101,26 +101,40 @@ closeCountry.addEventListener('click', () => {
     if (countryText) {
         countryText.classList.add('hidden');
     }
+
+    pauseVideos();
 });
 
 // Country close with escape button functionality
 document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && !countryBox.classList.contains('hidden')) {
         countryBox.classList.add('hidden');
-
+        
          // Hide the country's text
         if (countryText) {
             countryText.classList.add('hidden');
         }
+
+        pauseVideos();
     }
 });
 
+// Function to pan or scale the svg 
 function updateSVGTransform() {
     svg.style.transform = `translate(${panX}px, ${panY}px) scale(${scaleFactor})`;
 }
 
+// Function to hide the sidebar
 function hideSidebar() {
     if (!sidebar.classList.contains('hidden')) {
         sidebar.classList.add('hidden');
     }
+}
+
+// Function that pauses all videos in the document
+function pauseVideos() {
+    const videos = document.querySelectorAll('video');
+    videos.forEach((video) => {
+        video.pause();
+    });
 }
