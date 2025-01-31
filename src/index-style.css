@@ -104,7 +104,7 @@ video {
     margin: 0 auto;
     margin-top: 5%;
     border-radius: 10px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     animation: anime-cycle 10s infinite linear;
 }
@@ -169,12 +169,12 @@ video {
 }
 
 @keyframes anime-cycle {
-    0%, 100% { background-image: url(./assets/yourname.jpg); background-size: cover; }
-    20% { background-image: url(./assets/rezero.jpg); background-size: cover; }
-    40% { background-image: url(./assets/steins;gate.jpg); background-size: cover; }
-    60% { background-image: url(./assets/ubw.jpg); background-size: cover; }
-    80% { background-image: url(./assets/umineko.jpg); background-size: cover; }
-}
+    0%, 100% { background-image: url(./assets/yourname.jpg); }
+    20% { background-image: url(./assets/rezero.jpg); }
+    40% { background-image: url(./assets/steins;gate.jpg); }
+    60% { background-image: url(./assets/ubw.jpg); }
+    80% { background-image: url(./assets/umineko.jpg); }
+}   
 
 @keyframes rainbow-cycle {
     0%, 100% { color: rgb(127, 161, 255); }
