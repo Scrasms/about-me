@@ -9,6 +9,9 @@ const countryTitle = document.querySelector('.country-container > h1');
 let countryText;
 const closeCountry = document.querySelector('.close.country');
 
+const fanfareBtn = document.querySelector('#fanfare-button');
+const fanfareImages = document.querySelectorAll('.fanfare');
+
 // Constants to track the max and min zoom factor and the zoom speed
 const MIN_ZOOM = 0.5;
 const MAX_ZOOM = 4;
@@ -117,6 +120,21 @@ document.addEventListener('keydown', (event) => {
 
         pauseVideos();
     }
+});
+
+fanfareBtn.addEventListener('click', () => {
+    fanfareImages.forEach(image => {
+        image.classList.remove('hidden');
+        countryBox.style.overflowY = 'hidden';
+
+        image.style.animation = 'fanfare-jump 3s ease-out forwards';
+
+        // After animation ends, hide all images and reshow scrollbars
+        image.addEventListener('animationend', () => {
+            image.classList.add('hidden');
+            countryBox.style.overflowY = 'auto';
+        });
+    });
 });
 
 // Function to pan or scale the svg 
