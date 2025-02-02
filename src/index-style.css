@@ -80,7 +80,6 @@ a:active {
 }
 
 video {
-    margin-top: 5%;
     border-radius: 10px;
 }
 
@@ -203,6 +202,10 @@ video {
 
 .hidden {
     display: none;
+}
+
+.space-top {
+    margin-top: 5%;
 }
 
 .dragging {
