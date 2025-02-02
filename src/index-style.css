@@ -55,15 +55,36 @@ li {
     margin-top: 5%;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: pink;
+}
+
+a:visited {
+    color: rgb(5, 170, 192);
+}
+  
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: rgb(255, 0, 157);
+}
+
 video {
-    max-height: 180px;
-    max-width: 320px;
-    flex-shrink: 1;
+    margin-top: 5%;
+    border-radius: 10px;
 }
 
 .video-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 5vw;
 }
 
 .Australia li::marker {
@@ -76,6 +97,10 @@ video {
 
 .China li::marker {
     content: '🥡'
+}
+
+.United·States li::marker {
+    content: '🦅';
 }
 
 .container {
@@ -130,7 +155,7 @@ video {
 
 #f2 {
     rotate: 270deg;
-    top: 35vh;
+    top: 30vh;
     left: auto;
     right: -230px;
     z-index: 3;
@@ -139,7 +164,7 @@ video {
 
 #f3 {
     rotate: 90deg;
-    top: 35vh;
+    top: 30vh;
     left: -230px;
     right: auto;
     z-index: 4;
