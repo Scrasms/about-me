@@ -107,6 +107,10 @@ video {
     content: '🦅';
 }
 
+.United·Kingdom li::marker {
+    content: '☕';
+}
+
 .container {
     display: flex;
     justify-content: flex-start;
