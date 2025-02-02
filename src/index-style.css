@@ -75,12 +75,25 @@ a:active {
     color: rgb(255, 0, 157);
 }
 
+img {
+    margin-top: 5%;
+}
+
+.United·Kingdom img {
+    margin: 0 auto;
+}
+
+.Australia img {
+    margin-top: 0%;
+}
+
 video {
     margin-top: 5%;
     border-radius: 10px;
 }
 
-.video-container {
+.video-container,
+.image-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
