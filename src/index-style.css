@@ -111,6 +111,10 @@ video {
     content: '☕';
 }
 
+.France li::marker {
+    content: '🥖';
+}
+
 .container {
     display: flex;
     justify-content: flex-start;
