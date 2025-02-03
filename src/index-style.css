@@ -125,6 +125,10 @@ video {
     content: '🍕';
 }
 
+.Madagascar li::marker {
+    content: '🐧';
+}
+
 .container {
     display: flex;
     justify-content: flex-start;
@@ -223,6 +227,10 @@ video {
 
 .space-top {
     margin-top: 5%;
+}
+
+.super-space-top {
+    margin-top: 800vh;  
 }
 
 .dragging {
