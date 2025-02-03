@@ -79,6 +79,12 @@ a:active {
     margin: 0 auto;
 }
 
+embed {
+    border: 5px solid grey;
+    height: 50vh;
+    width: 50vw;
+}
+
 video {
     border-radius: 10px;
 }
@@ -113,6 +119,10 @@ video {
 
 .France li::marker {
     content: '🥖';
+}
+
+.Italy li::marker {
+    content: '🍕';
 }
 
 .container {
