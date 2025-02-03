@@ -97,6 +97,18 @@ video {
     gap: 5vw;
 }
 
+.book-container {
+    height: 374px;
+    width: 276px;
+    background-image: url(./assets/massive.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.book-container:hover {
+    background-image: url(./assets/war-and-peace.jpg);
+}
+
 .Australia li::marker {
     content: '🦘';
 }
@@ -127,6 +139,10 @@ video {
 
 .Madagascar li::marker {
     content: '🐧';
+}
+
+.Russia li::marker {
+    content: '⛄';
 }
 
 .container {
