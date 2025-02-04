@@ -1,3 +1,4 @@
+// Retrieve necessary DOM elements
 const map = document.querySelector('.world-map');
 const svg = document.querySelector('svg');
 
@@ -92,33 +93,15 @@ window.addEventListener('iconload', () => {
 });
 
 // Sidebar close button functionality
-closeSidebar.addEventListener('click', () => {
-    hideSidebar();
-});
+closeSidebar.addEventListener('click', hideSidebar());
 
 // Country close button functionality
-closeCountry.addEventListener('click', () => {
-    countryBox.classList.add('hidden');
-
-    // Hide the country's text
-    if (countryText) {
-        countryText.classList.add('hidden');
-    }
-
-    pauseVideos();
-});
+closeCountry.addEventListener('click', hidePopup());
 
 // Country close with escape button functionality
 document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && !countryBox.classList.contains('hidden')) {
-        countryBox.classList.add('hidden');
-        
-         // Hide the country's text
-        if (countryText) {
-            countryText.classList.add('hidden');
-        }
-
-        pauseVideos();
+        hidePopup();
     }
 });
 
@@ -131,8 +114,7 @@ fanfareBtn.addEventListener('click', () => {
 
         // After animation ends, hide all images and reshow scrollbars
         image.addEventListener('animationend', () => {
-            image.classList.add('hidden');
-            countryBox.style.overflowY = 'auto';
+            endAnimation(image);
         });
     });
 });
@@ -149,10 +131,33 @@ function hideSidebar() {
     }
 }
 
+// Function to hide a countries popup and all elements inside it
+function hidePopup() {
+    countryBox.classList.add('hidden');
+
+    // Hide the country's text
+    if (countryText) {
+        countryText.classList.add('hidden');
+    }
+
+    pauseVideos();
+
+    fanfareImages.forEach(image => {
+        endAnimation(image);
+    });
+}
+
 // Function that pauses all videos in the document
 function pauseVideos() {
     const videos = document.querySelectorAll('video');
     videos.forEach((video) => {
         video.pause();
     });
+}
+
+// Function to handle the end of an animation
+function endAnimation(image) {
+    image.classList.add('hidden');
+    countryBox.style.overflowY = 'auto';
+    image.style.animation = '';
 }
