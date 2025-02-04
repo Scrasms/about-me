@@ -145,6 +145,10 @@ video {
     content: '⛄';
 }
 
+.Egypt li::marker {
+    content: '⏳';
+}
+
 .container {
     display: flex;
     justify-content: flex-start;
