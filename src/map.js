@@ -93,10 +93,10 @@ window.addEventListener('iconload', () => {
 });
 
 // Sidebar close button functionality
-closeSidebar.addEventListener('click', hideSidebar());
+closeSidebar.addEventListener('click', hideSidebar);
 
 // Country close button functionality
-closeCountry.addEventListener('click', hidePopup());
+closeCountry.addEventListener('click', hidePopup);
 
 // Country close with escape button functionality
 document.addEventListener('keydown', (event) => {
