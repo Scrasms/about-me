@@ -100,7 +100,7 @@ video {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5vw;
+    gap: 2vw;
 }
 
 .book-container {
