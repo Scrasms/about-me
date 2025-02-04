@@ -60,11 +60,11 @@ a {
 }
 
 a:link {
-    color: pink;
+    color: rgb(5, 170, 192);
 }
 
 a:visited {
-    color: rgb(5, 170, 192);
+    color: pink;
 }
   
 a:hover {
@@ -147,6 +147,10 @@ video {
 
 .Egypt li::marker {
     content: '⏳';
+}
+
+.Germany li::marker {
+    content: '🥨';
 }
 
 .container {
