@@ -79,6 +79,12 @@ a:active {
     margin: 0 auto;
 }
 
+.Netherlands img {
+    margin-left: auto;
+    margin-right: auto;
+    animation: jumpscare 0.5s ease-in;
+}
+
 embed {
     border: 5px solid grey;
     height: 50vh;
@@ -151,6 +157,10 @@ video {
 
 .Germany li::marker {
     content: '🥨';
+}
+
+.Netherlands li::marker {
+    content: '🌷';
 }
 
 .container {
@@ -311,6 +321,12 @@ video {
 @keyframes fanfare-jump {
     0%, 100% { transform: translateY(200%); }
     50% { transform: translateY(0%); }
+}
+
+@keyframes jumpscare {
+    to {
+        transform: scale(50);
+    }
 }
 
 @media (orientation : portrait) {
