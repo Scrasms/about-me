@@ -75,16 +75,6 @@ a:active {
     color: rgb(255, 0, 157);
 }
 
-.United·Kingdom img {
-    margin: 0 auto;
-}
-
-.Netherlands img {
-    margin-left: auto;
-    margin-right: auto;
-    animation: jumpscare 0.5s ease-in;
-}
-
 embed {
     border: 5px solid grey;
     height: 50vh;
@@ -135,6 +125,10 @@ video {
     content: '☕';
 }
 
+.United·Kingdom img {
+    margin: 0 auto;
+}
+
 .France li::marker {
     content: '🥖';
 }
@@ -161,6 +155,12 @@ video {
 
 .Netherlands li::marker {
     content: '🌷';
+}
+
+.Netherlands img {
+    margin-left: auto;
+    margin-right: auto;
+    animation: jumpscare 0.5s ease-in;
 }
 
 .container {
@@ -219,7 +219,6 @@ video {
     right: -230px;
     z-index: 3;
 }
-
 
 #f3 {
     rotate: 90deg;
