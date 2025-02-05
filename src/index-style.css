@@ -198,37 +198,6 @@ video {
     animation: anime-cycle 20s infinite linear;
 }
 
-.fanfare {
-    display: block;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#f1 {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-}
-
-#f2 {
-    rotate: 270deg;
-    top: 30vh;
-    left: auto;
-    right: -230px;
-    z-index: 3;
-}
-
-
-#f3 {
-    rotate: 90deg;
-    top: 30vh;
-    left: -230px;
-    right: auto;
-    z-index: 4;
-}
-
 .world-map {
     height: 100%;
     overflow: hidden;
@@ -290,6 +259,37 @@ video {
 
 .close:hover {
     background-color: rgba(255, 40, 40, 0.45);
+}
+
+.fanfare {
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#f1 {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#f2 {
+    rotate: 270deg;
+    top: 30vh;
+    left: auto;
+    right: -230px;
+    z-index: 3;
+}
+
+
+#f3 {
+    rotate: 90deg;
+    top: 30vh;
+    left: -230px;
+    right: auto;
+    z-index: 4;
 }
 
 @keyframes rainbow-cycle {
