@@ -252,6 +252,11 @@ video {
     background-color: rgba(0, 0, 0, 0.7);
     text-align: left;
     overflow-y: auto;
+    direction: rtl;
+}
+
+.sidebar-text {
+    direction: ltr;
 }
 
 .hidden {
